@@ -1,6 +1,6 @@
 cloudprovider: harvester
 
-cloudCredentialSecretName: harvester
+cloudCredentialSecretName:  cattle-global-data:cc-btj5r
 
 # Specify nodepool options. Can add multiple node groups, specify etcd, controlplane and worker roles.
 nodepools:
@@ -22,7 +22,7 @@ nodepools:
   # paused: false
 
   # specify displayName
-  # displayName: ""
+  # displayName: "template"
 
   # specify rolling update mechanism
   # rollingUpdate:
@@ -65,7 +65,7 @@ nodepools:
   diskBus: virtio
   cpuCount: 4
   memorySize: 8
-  networkName: default/network-name-1
-  imageName: default/image-rand
-  vmNamespace: default
-  sshUser: ubuntu
+  networkName: vm-vlan/vm-vlan
+  imageName: isos/image-4zlmb
+  vmNamespace: prod
+  sshUser: kaio
